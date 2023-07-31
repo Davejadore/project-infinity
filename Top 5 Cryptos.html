@@ -32,6 +32,7 @@
                 data.forEach(crypto => {
                     const row = document.createElement('tr');
                     row.innerHTML = `
+                        <td><img src="${crypto.image}" alt="${crypto.name}" style="max-width: 30px;"></td>
                         <td>${crypto.name}</td>
                         <td>$${crypto.current_price.toFixed(2)}</td>
                     `;
